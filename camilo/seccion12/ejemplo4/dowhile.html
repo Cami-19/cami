@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //programa que adivina un número secreto!
+
+        let misterio = 8;
+        let intento;
+        do{
+            intento = parseInt(prompt(`adivina un número entre 1-10`));
+            
+        }
+        while(misterio!=intento);
+        document.write("En hora buena, haz adivinado!");
+    </script>
+</body>
+</html>

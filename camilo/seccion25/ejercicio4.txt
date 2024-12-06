@@ -1,0 +1,46 @@
+use base1;
+db.articulos.insertMany(
+    [
+        {
+            _id:1,
+            nombre:'MULTIFUNCION HP DESKJET 2675',
+            rubro: 'impresora',
+            precio: 3000,
+            stock:20
+            
+        },
+        {
+            _id:2,
+            nombre:'MULTIFUNCION EPSON EXPRSSION XP241',
+            rubro: 'impresora',
+            precio: 3700,
+            stock:5
+        },
+        {
+            _id:3,
+            nombre:'LED 19 PHILIPS',
+            rubro: 'monitor',
+            precio: 4500,
+            stock:2
+        },
+        {
+            _id:4,
+            nombre:'LED 22 PHILIPS',
+            rubro: 'monitor',
+            precio: 5700,
+            stock:4
+        }
+        
+    ]
+);
+// 1
+//db.articulos.find();
+
+//2
+//db.articulos.find({rubro:{$nin:['impresora']}})
+
+//3
+
+
+//4
+//db.articulos.find({precio:{$gt:5000}})

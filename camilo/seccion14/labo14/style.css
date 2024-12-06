@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body{
+
+    background-color: antiquewhite;
+}
+header{
+   background-color: antiquewhite; 
+   color: rgb(0, 0, 0);
+   padding: 1em;
+   text-align: center; 
+
+}
+main{
+    padding: 50px;
+    text-align: center;
+    
+
+}
+
+.principal{
+    background-color: antiquewhite;
+    display: flex;
+    padding: 50px;
+    text-align: center;
+    align-content: center;
+   justify-content: center;
+   
+}
+.contenedorImagen{
+    justify-content: center;
+padding: 20px;
+}
+.contenedorImagen2{
+justify-content: center;
+ padding: 20px;
+
+
+}
+.imagenPrincipal:hover{
+    transform: scale(1.01);
+}
+.imagenPrincipal2:hover{
+    transform: scale(1.01);
+}
+.imagenPrincipal5:hover{
+    transform: scale(1.01);
+   
+}
+.imagenPrincipal4:hover{
+    transform: scale(1.01);
+}
+
+.imagenPrincipal5{
+    max-width: 30%;
+}
+
+.contenedorImagen1{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.imagenPrincipal{
+    max-width:45%;
+    border-radius: 20px;
+   
+}
+.imagenPrincipal2{
+    max-width: 99%;
+    border-radius: 20px;
+   
+}
+.imagenPrincipal3{
+    border-radius:20px ;
+}
+.imagenPrincipal4{
+    max-width: 40%;
+    border-radius: 20px;
+  
+}
+.pagina15{
+    text-align: left;
+    padding: 20px;
+}
+
+h2{
+    padding: 20px;
+    margin-top: 25px;
+}
+
+
+footer{
+    background-color: #333;
+    color: white;
+   display: flex;
+    padding: 1em 0;
+    width: 100%;
+    text-shadow: none;
+    align-content: center;
+    display: flex;
+    gap: 60px;
+   justify-content: center;
+    
+}
+
+.barraNavegacion{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(214, 177, 128);
+    padding: 1em 0;
+    box-shadow: 0 4px 8px rgba(174, 30, 30, 0.1);
+    z-index: 100;
+}
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+
+}
+.menu a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+}
+.menu a:hover{
+    background-color: rgb(215, 98, 98);
+    border-radius: 4px;
+
+
+}
+.desplegable{
+    position: relative;
+
+}
+.subMenu{
+
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgb(214, 177, 128);
+    list-style-type: none;
+    padding: 0;
+    min-width: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+.subMenu li{
+    width: 100%;
+
+    
+}
+.subMenu li a{
+    display: block;
+    padding: 8px 18px;
+    color: rgb(13, 13, 14);
+
+}
+.subMenu li a:hover{
+    background-color: rgb(202, 91, 91);
+
+}
+.desplegable:hover .subMenu{
+    display: block;
+}
+

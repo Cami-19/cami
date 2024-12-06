@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--dada tres calificaciones determina si aprueba o reprueba la materia-->
+    <script>
+        //tenga en cuenta que la asignatura se gana encima de 6
+
+        let a = parseInt(prompt("ingrese la primera calificacion"));
+        let b = parseInt(prompt("ingrese la segunda calificacion"));
+        let c = parseInt(prompt("ingrese la tercera calificacion"));
+
+        let prom = (a + b + c)/3;
+        document.write("su promedio es: " ,prom, "<br>" )
+
+        if (prom >6){
+            document.write("asignatura aprobada");
+        }
+        else {
+            document.write("asignatura reprobada");
+        }
+
+
+    </script>
+
+
+    
+</body>
+</html>

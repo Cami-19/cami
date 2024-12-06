@@ -1,0 +1,69 @@
+/*
+CREATE TABLE autores(
+  id int PRIMARY KEY,
+  nombre varchar (100),
+  nacionalidad varchar(20)
+  );
+  
+  
+CREATE TABLE libros(
+  id int PRIMARY KEY,
+  autor_id int,
+  titulo varchar(50),
+  genero varchar(50),
+  Anio_publicacion int,
+  CONSTRAINT fk_autores,
+  FOREIGN key (Autor_id) REFERENCES autores (id)
+  on delete cascade 
+  );
+
+ INSERT INTO autores(id,nombre,nacionalidad) VALUES(1, 'gabriel garcia marquez', 'colombiano');
+ INSERT INTO autores(id,nombre,nacionalidad) VALUES(2, 'rafael pombo', 'colombiano');
+ INSERT INTO autores(id,nombre,nacionalidad) VALUES(3, 'laura restrepo', 'colombiana');
+
+ 
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(1, 1, 'La hojarasca', 'realismo magico', 1955);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(2, 1, 'El coronel no tiene quien le escriba', 'novela', 1961); 
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(3, 1, 'La mala hora', 'novela', 1962);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(4, 1, 'Cien años de soledad', 'novela', 1967);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(5, 1, 'El otoño del patriarca', 'novela', 1975);
+  
+  
+ iNSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(6, 2, 'la pobre viejecita', 'fabula', 1854);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(7, 2, 'Mirringa Mirronga', 'ficcion', 1994); 
+
+
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(8, 3, 'el leopardo del sol', 'ficcion', 1993);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(9, 3, 'historia de una traicion', 'ficcion',1986); 
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(10, 3, 'La isla de la pasion', 'ficcion', 1987);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(11, 3, 'La novia oscura', 'ficcion', 1999);
+ INSERT INTO libros(id,Autor_id,titulo,genero,anio_publicacion) VALUES(12, 3, 'Historia de un entusiasmo', 'ficcion', 1999);
+ */
+ 
+ 
+/*
+ SELECT * FROM libros;
+ SELECT * FROM autores WHERE id =3;
+
+ SELECT * FROM libros INNER JOIN autores on autor_id = autores.id;
+
+  
+  SELECT titulo FROM libros WHERE anio_publicacion > 1996;
+ UPDATE libros set Anio_publicacion=1955 WHERE id=1;
+ 
+SELECT * FROM libros;
+ 
+ SELECT autores.nombre, COUNT(Libros.id) as Cantidad_Libros
+ from libros
+ JOIN autores ON Libros.Autor_id=Autores.id
+ GROUP by autores.Nombre
+ HAVING Cantidad_Libros>1;
+ 
+ 
+ UPDATE libros set genero = 'fabula' WHERE id=7;
+ */
+DELETE FROM autores WHERE id=2;
+
+  SELECT * FROM autores;
+  
+DROP TABLE libros;

@@ -1,0 +1,25 @@
+body{
+    background-color: antiquewhite;
+}
+header{
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(118, 113, 113);
+
+}
+button{
+    width: 20px;
+}
+.otroejemplo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 250px;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(91, 109, 94);
+}
+.caja{
+    background-color: rgba(208, 46, 223, 0.26);
+    
+}

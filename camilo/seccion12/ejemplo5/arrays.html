@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vector = [
+            { nombre:"Ana", calificacion:85}, //posicion 0
+            { nombre:"Felipe", calificacion:90},//posicion 1
+            { nombre:"carlos", calificacion:70} //posicion 2
+        ];
+        //entramos al vector y mostramos el contenido
+        let i = 0;
+        let mensaje = "";
+        for(i;i <= vector.length;i++){
+            mensaje = `${vector[i].nombre} ${vector[i].calificacion} <br>`;
+            document.write(mensaje);
+        }
+    
+
+    </script>
+    
+</body>
+</html>

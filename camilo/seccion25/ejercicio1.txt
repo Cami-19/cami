@@ -1,0 +1,32 @@
+use base1
+db.libros.insertMany(
+    [
+        {
+            codigo:3,
+            nombre: 'Aprenda SQL',
+            autor: 'Pablo Carr',
+            editorial: 'Unilibre'
+        },
+        {
+            codigo: 4,
+            nombre: 'Aprenda SQL',
+            autor: 'Juan Carr',
+            editorial: 'Unilibre'
+        }
+    ]
+);
+db.clientes.insertOne(
+    {
+        _id:1,
+        nombre: 'Pablpo Carr',
+        domicilio: 'Cedritos',
+        ciudad: 'Bogota'
+        
+    }
+);
+db.libros.find(
+    {
+        codigo: {$eq:3}
+        
+    }
+);

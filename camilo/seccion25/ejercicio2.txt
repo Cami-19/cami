@@ -1,0 +1,23 @@
+use db1;
+db.students.insertMany(
+    [
+        {
+            _id: 1,
+            name:'Ryan',
+            gender:'M'
+            
+        },
+        {
+            _id:2,
+            name: 'Joanna',
+            gender: 'F'
+        }
+    ]
+);
+db.students.find(
+    {
+        gender: 'M'
+        
+    }
+);
+db.students.find();

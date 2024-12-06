@@ -1,0 +1,24 @@
+/*.a{
+position: static;
+top: 800px;
+left: 400px;
+}
+
+.b{
+    position: static;
+}
+
+.c{
+    position: static;
+}
+
+p{
+    width: 100px;
+    color: purple;
+    border: dotted;
+}
+    */
+.ejemplo{
+    text-align: center;
+    border: solid;
+}
